@@ -1,0 +1,203 @@
+/* =======  Global  ======= */
+
+body {
+	padding-top: 0px;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #555;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	/* Rainbow and bubble background */
+	background:
+			radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+			radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+			radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+			radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+			radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+			radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+			linear-gradient(0deg, #e27412 0%, #b13e12 20%, #840b2a 30%, #83096e 40%, #760ea1 50%, #0b1284 60%, #006782 70%, #187546 80%, #184500 90%, #343702 100%) no-repeat;
+	background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+	background-color: #e27412;
+	background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+p.lead {
+	font-weight: normal;
+}
+
+a:link, a:visited {
+	color: #dd5638;
+}
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
+}
+
+button, input, .btn, a.btn {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: #fff;
+}
+
+.btn {
+	font-weight: bold;
+}
+
+button.btn:focus {
+	outline: none !important;
+}
+
+.btn-danger {
+	background-color: #dd5638;
+	border-collapse: #d95131;
+}
+
+.btn-success {
+	background: #79b044;
+	border: none;
+}
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #ec971f;
+}
+img {
+	width: 100%;
+}
+.section-header {
+	margin: 3rem 0;
+}
+
+/* =======  Navbar  ======= */
+.navbar {
+	opacity: 0.9;
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:  0px 0px 4px rgba(0,0,0,0.3);
+	box-shadow:  0px 0px 4px rgba(0,0,0,0.3);
+	height:	106px;
+}
+
+.navbar-collapse {
+	overflow: visible;
+}
+
+#logo img{
+	margin-top: -12px !important;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	border: 3px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:  0px 0px 4px rgba(0,0,0,0.3);
+	box-shadow:  0px 0px 4px rgba(0,0,0,0.3);
+}
+#topText {
+	margin-top: 20px;
+}
+
+ /* =======  Panels  ======= */
+
+.panel {
+	margin: 136px 0 60px 0;
+	height: 100%;
+	opacity: 0.95;
+	-webkit-box-shadow: 0px 0px 16px rgba(0,0,0,0.7);
+	-moz-box-shadow:  0px 0px 16px rgba(0,0,0,0.7);
+	box-shadow:  0px 0px 16px rgba(0,0,0,0.7);
+
+}
+
+/* =======  Footer  ======= */
+footer {
+	opacity: 0.9;
+	background: #aaa;
+	color: #fff;
+	padding: 20px 0 10px;
+	font-size: 12px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+footer p {
+	margin: 0;
+}
+footer a:link, footer a:visited {
+	color: #fff;
+}
+footer a:hover {
+	color: #dd5638;;
+}
+
+/* =======  Media Queries  ======= */
+
+
+@media (max-width: 845px) {
+	#topText {
+		font-size: 1.56rem;
+	}
+}
+@media (max-width: 828px) {
+	#topText {
+		font-size: 1.4rem;
+	}
+}
+@media (min-width: 768px) {
+	.dropdown:hover .dropdown-menu { /* Dropdowns in der Navi on Hover */
+		display: block;
+	}
+}
+@media (max-width: 768px) {
+	#logo img {
+		width: 50%;
+		-webkit-border-radius: 10%;
+		-moz-border-radius: 10%;
+		border-radius: 10%;
+		border: 2px solid #ffffff;
+	}
+	.navbar {
+		height:	54px;
+	}
+	.navbar-collapse {
+		background-color: #fff;
+	}
+
+	.panel {
+		margin: 80px 0 60px 0;
+	}
+	.dropdown-menu {
+		opacity: 1;
+	}
+	#topText {
+		margin-top: 26px;
+		font-size: 1.56rem;
+	}
+}
