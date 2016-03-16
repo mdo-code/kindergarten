@@ -1,6 +1,7 @@
 # kindergarten
 Webpage for a kindergarden
 
+It's not ready yet!
 I bring the old page from my sons kindergarden from 2000 to the year 2016.
 Getting rid of the frames and make it usable on mobile phones and tablets.
 
